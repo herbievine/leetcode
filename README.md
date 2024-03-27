@@ -15,7 +15,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [x] Top K Frequent Elements
 - [x] Product of Array Except Self
 - [x] Valid Sudoku
-- [ ] Longest Consecutive Sequence
+- [x] Longest Consecutive Sequence
 
 ### Two Pointers
 
