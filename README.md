@@ -17,7 +17,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [x] Valid Sudoku
 - [ ] Longest Consecutive Sequence
 
-### Two Pointers
+### Two Pointers
 
 - [ ] Valid Palindrome
 - [ ] Two Sum II - Input array is sorted
@@ -35,7 +35,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [ ] Car Fleet
 - [ ] Largest Rectangle In Histogram
 
-### Binary Search
+### Binary Search
 
 - [ ] Binary Search
 - [ ] Search a 2D Matrix
@@ -45,7 +45,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [ ] Time Based Key Value Store
 - [ ] Median of Two Sorted Arrays
 
-### Sliding Window
+### Sliding Window
 
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Longest Substring Without Repeating Characters
