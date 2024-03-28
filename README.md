@@ -19,7 +19,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 
 ### Two Pointers
 
-- [ ] Valid Palindrome
+- [x] Valid Palindrome
 - [ ] Two Sum II - Input array is sorted
 - [ ] 3Sum
 - [ ] Container With Most Water
