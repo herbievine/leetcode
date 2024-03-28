@@ -5,21 +5,18 @@ import (
 )
 
 func twoSum(numbers []int, target int) []int {
-	l := len(numbers)
+	lp := 0
+	rp := len(numbers) - 1
 
-	if l == 2 {
-		return []int{1, 2}
-	}
+	for true {
+		if numbers[lp]+numbers[rp] == target {
+			return []int{lp + 1, rp + 1}
+		}
 
-	for i, iv := range numbers {
-		for j, jv := range numbers {
-			if i == j {
-				continue
-			}
-
-			if iv+jv == target {
-				return []int{i + 1, j + 1}
-			}
+		if numbers[lp]+numbers[rp] > target {
+			rp--
+		} else {
+			lp++
 		}
 	}
 
