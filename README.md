@@ -22,7 +22,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [x] Valid Palindrome
 - [x] Two Sum II - Input array is sorted
 - [x] 3Sum
-- [ ] Container With Most Water
+- [x] Container With Most Water
 - [ ] Trapping Rain Water
 
 ### Stack
