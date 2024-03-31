@@ -37,7 +37,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 
 ### Binary Search
 
-- [ ] Binary Search
+- [x] Binary Search
 - [ ] Search a 2D Matrix
 - [ ] Koko Eating Bananas
 - [ ] Find Minimum In Rotated Sorted Array
