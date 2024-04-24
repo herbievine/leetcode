@@ -11,85 +11,54 @@ func trap(height []int) int {
 		return 0
 	}
 
-	count, lp, rp := 0, 0, 0
+	total, lp, i, rp := 0, 0, 2, 2
 
-	// skip leading 0s
-	for i, v := range height {
-		if v == 0 {
-			continue
+	for i < l {
+		if height[i] > height[rp] {
+			rp = i
 		}
 
-		lp = i
-		rp = i
-
-		break
+		i++
 	}
 
-	maxIter := l
+	i = 1
 
-	for i := l - 1; i >= 0; i-- {
-		if height[i] > height[i-1] {
-			maxIter = i + 1
-			break
+	for i < l-1 {
+		res := height[lp] - height[i]
+
+		if height[lp] > height[rp] {
+			res = height[rp] - height[i]
 		}
-	}
 
-	fmt.Println(maxIter, l)
+		if res > 0 {
+			total += res
+		}
 
-	// iter rp to len
-	for rp < maxIter {
-		// fmt.Println("lp:", height[lp], "rp:", height[rp])
+		if height[i] > height[lp] {
+			lp = i
+		}
 
-		// if rp is lower than lp
-		if height[rp] < height[lp] {
-			tmp := 0
-			maxToAdd := 0
-			i := rp
+		if i == rp-1 {
+			rp++
+			j := rp
 
-			// determine highest next wall
-			for i < maxIter {
-				// if wall is higher that lp, max = lp
-				if height[i] > height[lp] {
-					maxToAdd = height[lp]
-					break
+			for j < l {
+				if height[j] > height[rp] {
+					rp = j
 				}
 
-				// if height is more than max, max = i
-				if height[i] > maxToAdd {
-					maxToAdd = height[i]
-				}
-
-				i++
+				j++
 			}
-
-			fmt.Println("max", maxToAdd)
-
-			// fmt.Println("lp:", height[lp], "rp:", height[rp], maxToAdd)
-
-			// iter rp and count possible fill zones
-			for rp < maxIter && height[rp] < height[lp] {
-				// fmt.Println("lp:", height[lp], "rp:", height[rp], maxToAdd)
-				// fmt.Println("rp:", rp, "adding:", maxToAdd-height[rp], maxToAdd)
-				tmp += maxToAdd - height[rp]
-
-				rp++
-			}
-
-			// add fill zones to total
-			count += tmp
-			// increase lp to rp
-			lp = rp
 		}
 
-		rp++
+		i++
 	}
 
-	return count
+	return total
 }
 
 func main() {
-	// height := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
-	height := []int{3, 0, 0, 0, 1}
+	height := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
 
 	fmt.Println(trap(height))
 }

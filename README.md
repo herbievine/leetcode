@@ -23,7 +23,7 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 - [x] Two Sum II - Input array is sorted
 - [x] 3Sum
 - [x] Container With Most Water
-- [ ] Trapping Rain Water
+- [x] Trapping Rain Water
 
 ### Stack
 
