@@ -27,9 +27,9 @@ This repository contains my solutions to Leetcode problems in Go. I am using thi
 
 ### Stack
 
-- [ ] Valid Parentheses
-- [ ] Min Stack
-- [ ] Evaluate Reverse Polish Notation
+- [x] Valid Parentheses
+- [x] Min Stack
+- [x] Evaluate Reverse Polish Notation
 - [ ] Generate Parentheses
 - [ ] Daily Temperatures
 - [ ] Car Fleet
